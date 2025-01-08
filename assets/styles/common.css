@@ -1,0 +1,136 @@
+.container {
+    width: 100%;
+    max-width: 1040px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.container_content {
+    padding: 0;
+}
+
+.h1 {
+    font-size: 34px;
+    line-height: 36px;
+    margin: 0;
+    font-family: var(--main-font-family-2);
+    font-weight: normal;
+}
+
+.h2 {
+    font-size: 32px;
+    line-height: 34px;
+    margin: 0;
+    font-family: var(--main-font-family-2);
+    font-weight: normal;
+}
+
+.h3 {
+    font-size: 18px;
+    line-height: 24px;
+    margin: 0;
+    font-family: var(--main-font-family-2);
+    font-weight: normal;
+}
+
+.h3mk1 {
+    font-size: 18px;
+    line-height: 24px;
+    margin: 0;
+    font-family: var(--main-font-family-3);
+    font-weight: normal;
+}
+
+.h4 {
+    font-size: 14px;
+    line-height: 16px;
+    margin: 0;
+    font-family: var(--main-font-family-2);
+}
+
+.input {
+    border: 1px solid #bcbec0;
+    height: 25px;
+    font: var(--main-font-1);
+    padding: 0 10px 0 10px;
+
+    &[disabled] {
+        background-color: #f9f9f9;
+        color: #bcbec0;
+    }
+}
+
+.select {
+    border: 1px solid #bcbec0;
+    font: var(--main-font-1);
+    height: 25px;
+    padding: 0 25px 0 10px;
+    outline: none;
+    appearance: none;
+
+    --background-url: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="10px" height="6px"><path fill-rule="evenodd" fill="rgb(102, 102, 102)" d="M-0.005,0.010 L9.992,0.010 L4.994,5.998 L-0.005,0.010 Z"/></svg>');
+    background: var(--input-background-color) var(--background-url) calc(100% - 7px) calc(50% + 1px) no-repeat;
+}
+
+.textarea {
+    border: 1px solid #bcbec0;
+    height: 25px;
+    font: var(--main-font-1);
+    padding: 10px;
+    resize: vertical;
+    min-height: 50px;
+}
+
+.button {
+    border: 1px solid transparent;
+    font-family: var(--main-font-family-2);
+    background-color: #f15753;
+    color: white;
+    cursor: pointer;
+    min-height: 25px;
+    padding: 3px 6px;
+
+    &:hover {
+        opacity: 0.85;
+    }
+}
+
+.radio {
+    padding: 0;
+    margin: 0;
+    width: 18px;
+    height: 18px;
+    appearance: none;
+    border-radius: 50%;
+    border: 2px solid #cacaca;
+
+    &:checked {
+        border: 5px solid #00aef3;
+    }
+}
+
+.radioControl {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.radioControl-text {}
+
+.link1 {
+    color: #f15753;
+    text-decoration: none;
+
+    &:hover {
+        text-decoration: underline;
+    }
+}
+
+.link2 {
+    color: #0097dd;
+    text-decoration: none;
+
+    &:hover {
+        text-decoration: underline;
+    }
+}

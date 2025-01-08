@@ -1,0 +1,640 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Preferred Client Alpha</title>
+    <link rel="stylesheet" href="assets/styles/style.css"></link>
+
+    <link
+        rel="stylesheet"
+        type="text/css"
+        href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"
+    />
+    <link
+        rel="stylesheet"
+        type="text/css"
+        href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css"
+    />
+</head>
+<body>
+
+<header class="header">
+    <div class="container">
+        <a href="/" class="logo">Company Folders</a>
+        <a href="tel:2487387600" class="header-phone">(248) 738-7600</a>
+        <a href="mailto:companyfolders@gmail.com" class="header-email">companyfolders@gmail.com</a>
+    </div>
+</header>
+
+<div class="brandBar">
+    <div class="container">
+        <a href="#" class="brandBar-logo"></a>
+        <p class="brandBar-text">Welcome to EXP Realty Luxury agent-approved product portal, containing Company Folders products. Each product is professionally crafted, rigorously tested and made from premium materials with intense colors, excellent folding properties, and profound textures.</p>
+    </div>
+</div>
+
+<div id="root"></div>
+
+<div id="modal-portal"></div>
+
+<template>
+<div class="container container_content">
+    <div class="products">
+        <div class="productsHeader">
+            <h1 class="h1 productsHeader-title">EXP REALTY LUXURY PRODUCTS</h1>
+            <div class="productsHeader-count">1 - 3 of 3 Products</div>
+        </div>
+
+        <div class="productsList">
+            <div class="productCard">
+                <div class="productCard-header">
+                    <h2 class="h2 productCard-headerTitle">Presentation Folder</h2>
+                </div>
+                <div class="productCard-imageWrapper">
+                    <div class="productCard-imageBox"></div>
+                </div>
+
+                <div class="productCard-options">
+                    <div class="productCard-optionsList">
+                        <label class="productCard-option">
+                            <input type="radio" class="radio productCard-optionRadio" name="product-option" checked>
+                            <span class="h3mk1 productCard-optionTitle">Premade Product</span>
+                            <span class="productCard-priceMark">$</span>
+
+                            <span class="productCard-optDescription">
+
+                                <span class="productCard-optDescriptionUl">
+                                    <span class="productCard-optDescriptionLi">Gold foil stamped logo</span>
+                                    <span class="productCard-optDescriptionLi">100lb Black linen stock</span>
+                                    <span class="productCard-optDescriptionLi">Business card slit on right pocket</span>
+                                </span>
+
+                                <span class="productCard-optDescriptionNote">Production Time: 2 working days</span>
+                            </span>
+                        </label>
+
+                        <label class="productCard-option">
+                            <input type="radio" class="radio productCard-optionRadio" name="product-option">
+                            <span class="h3mk1 productCard-optionTitle">Custom Product</span>
+                            <span class="productCard-priceMark">$$</span>
+
+                            <span class="productCard-optDescription">
+                                <span class="productCard-optDescriptionPara">Create your own design and customize it with imprints, stocks, coatings, slits (including for business cards), and more.</span>
+
+                                <span class="productCard-optDescriptionNote">Production Time: 5-9 working days</span>
+                            </span>
+
+                            <span class="productCard-servicesList">
+                                <span class="productCard-servicesListItem">Free Artwork Review</span>
+                                <span class="productCard-servicesListItem">Free Corrections</span>
+                                <span class="productCard-servicesListItem">Free Proof</span>
+                            </span>
+                        </label>
+                    </div>
+
+                    <div class="productCard-qty">
+                        <label class="h3mk1 productCard-qtyLabel" for="qtySelect">Select Quantity</label>
+                        <select id="qtySelect" class="select productCard-qtySelect">
+                            <option>00,000</option>
+                            <option>00,000</option>
+                            <option>00,000</option>
+                        </select>
+                        <button type="button" class="button productCard-qtyGetButton">Get Pricing</button>
+
+                        <span class="productCard-qtyShipping">
+                            <span class="productCard-qtyShippingTitle">Free Shipping</span> - Expires 1/31
+                        </span>
+                    </div>
+                </div>
+
+                <div class="productCard-warranty">
+                    <div class="productCard-warrantyText">
+                        <h4 class="h4 productCard-warrantyTitle">Lifetime Warranty</h4>
+                        <p class="productCard-warrantyPara">We guarantee this product to last a lifetime.</p>
+                        <a href="#" class="link1 productCard-warrantyReadMore">Learn more</a>
+                    </div>
+
+                    <ul class="productCard-warrantyMenu">
+                        <li class="productCard-warrantyMenuItem">
+                            <a href="#" class="link2 productCard-warrantyMenuLink productCard-warrantyMenuLink_quality">Quality Inspections</a>
+                        </li>
+                        <li class="productCard-warrantyMenuItem">
+                            <a href="#" class="link2 productCard-warrantyMenuLink productCard-warrantyMenuLink_protection">Shipping Protection</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="productCard-description">
+                    <p class="productCard-descriptionPara">This folder exudes luxury with its precisely cut square corners, which create a crisp, clean exterior, and its profound textured stocks (contained in the premade product), constructed to be sturdy yet flexible with powerful tactical impact. The folder’s two pockets keep your letter-size (8 1/2" x 11") documents including marketing materials, checklists, timelines, guides, proposals, and listings for your clients secure and organized. We recommend adding a business card slit to the right pocket (contained in the premade product) to highlight your contact information, making it easy for your clients to reach out.</p>
+                </div>
+
+                <div class="productCard-specs">
+                    <h4 class="productCard-specsTitle">Dimension Open:</h4>
+                    <p class="productCard-specsPara">18" x 12"</p>
+
+                    <h4 class="productCard-specsTitle">Dimension Closed:</h4>
+                    <p class="productCard-specsPara">9" x 12"</p>
+
+                    <h4 class="productCard-specsTitle">Orientation:</h4>
+                    <p class="productCard-specsPara">Portrait</p>
+
+                    <h4 class="productCard-specsTitle">Holds:</h4>
+                    <p class="productCard-specsPara">Letter size paper (8 1/2" x 11")</p>
+
+                    <h4 class="productCard-specsTitle">Left Pocket:</h4>
+                    <p class="productCard-specsPara">4 1/4" tall v-split horizontal pocket</p>
+
+                    <h4 class="productCard-specsTitle">Right Pocket:</h4>
+                    <p class="productCard-specsPara">4 1/4" tall v-split horizontal pocket</p>
+                </div>
+            </div>
+
+            <div class="productCard">
+                <div class="productCard-header">
+                    <h2 class="h2 productCard-headerTitle">Legal Size Portfolio Envelope</h2>
+                </div>
+                <div class="productCard-imageWrapper">
+                    <div class="productCard-imageBox"></div>
+                </div>
+
+                <div class="productCard-options">
+                    <div class="productCard-optionsList">
+                        <label class="productCard-option">
+                            <input type="radio" class="radio productCard-optionRadio" name="product-option" checked>
+                            <span class="h3mk1 productCard-optionTitle">Premade Product</span>
+                            <span class="productCard-priceMark">$</span>
+
+                            <span class="productCard-optDescription">
+                                <span class="productCard-optDescriptionUl">
+                                    <span class="productCard-optDescriptionLi">Gold foil stamped logo</span>
+                                    <span class="productCard-optDescriptionLi">100lb Black linen stock</span>
+                                    <span class="productCard-optDescriptionLi">Business card slit on right pocket</span>
+                                </span>
+
+                                <span class="productCard-optDescriptionNote">Production Time: 2 working days</span>
+                            </span>
+                        </label>
+
+                        <label class="productCard-option">
+                            <input type="radio" class="radio productCard-optionRadio" name="product-option">
+                            <span class="h3mk1 productCard-optionTitle">Custom Product</span>
+                            <span class="productCard-priceMark">$$</span>
+
+                            <span class="productCard-optDescription">
+                                <span class="productCard-optDescriptionPara">Create your own design and customize it with imprints, stocks, coatings, slits (including for business cards), and more.</span>
+
+                                <span class="productCard-optDescriptionNote">Production Time: 5-9 working days</span>
+                            </span>
+
+                            <span class="productCard-servicesList">
+                                <span class="productCard-servicesListItem">Free Artwork Review</span>
+                                <span class="productCard-servicesListItem">Free Corrections</span>
+                                <span class="productCard-servicesListItem">Free Proof</span>
+                            </span>
+                        </label>
+                    </div>
+
+                    <div class="productCard-qty">
+                        <label class="h3mk1 productCard-qtyLabel" for="qtySelect">Quantity</label>
+                        <input id="qtySelect" type="text" value="00,000" class="input productCard-qtySelect" />
+                        <button type="button" class="button productCard-qtyGetButton">Start Customizing</button>
+
+                        <span class="productCard-qtyMinimum">25 Minimum</span>
+
+                        <span class="productCard-qtyShipping">
+                            <span class="productCard-qtyShippingTitle">Free Shipping</span> - Expires 1/31
+                        </span>
+                    </div>
+                </div>
+
+                <div class="productCard-warranty">
+                    <div class="productCard-warrantyText">
+                        <h4 class="h4 productCard-warrantyTitle">Lifetime Warranty</h4>
+                        <p class="productCard-warrantyPara">We guarantee this product to last a lifetime.</p>
+                        <a href="#" class="link1 productCard-warrantyReadMore">Learn more</a>
+                    </div>
+
+                    <ul class="productCard-warrantyMenu">
+                        <li class="productCard-warrantyMenuItem">
+                            <a href="#" class="link2 productCard-warrantyMenuLink productCard-warrantyMenuLink_quality">Quality Inspections</a>
+                        </li>
+                        <li class="productCard-warrantyMenuItem">
+                            <a href="#" class="link2 productCard-warrantyMenuLink productCard-warrantyMenuLink_protection">Shipping Protection</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="productCard-description">
+                    <p class="productCard-descriptionPara">This folder exudes luxury with its precisely cut square corners, which create a crisp, clean exterior, and its profound textured stocks (contained in the premade product), constructed to be sturdy yet flexible with powerful tactical impact. The folder’s two pockets keep your letter-size (8 1/2" x 11") documents including marketing materials, checklists, timelines, guides, proposals, and listings for your clients secure and organized. We recommend adding a business card slit to the right pocket (contained in the premade product) to highlight your contact information, making it easy for your clients to reach out.</p>
+                </div>
+
+                <div class="productCard-specs">
+                    <h4 class="productCard-specsTitle">Dimension Open:</h4>
+                    <p class="productCard-specsPara">18" x 12"</p>
+
+                    <h4 class="productCard-specsTitle">Dimension Closed:</h4>
+                    <p class="productCard-specsPara">9" x 12"</p>
+
+                    <h4 class="productCard-specsTitle">Orientation:</h4>
+                    <p class="productCard-specsPara">Portrait</p>
+
+                    <h4 class="productCard-specsTitle">Holds:</h4>
+                    <p class="productCard-specsPara">Letter size paper (8 1/2" x 11")</p>
+
+                    <h4 class="productCard-specsTitle">Left Pocket:</h4>
+                    <p class="productCard-specsPara">4 1/4" tall v-split horizontal pocket</p>
+
+                    <h4 class="productCard-specsTitle">Right Pocket:</h4>
+                    <p class="productCard-specsPara">4 1/4" tall v-split horizontal pocket</p>
+                </div>
+            </div>
+
+            <div class="productCard">
+                <div class="productCard-header">
+                    <h2 class="h2 productCard-headerTitle">Presentation Folder</h2>
+                </div>
+                <div class="productCard-imageWrapper">
+                    <div class="productCard-imageBox"></div>
+                </div>
+
+                <div class="productCard-options">
+                    <div class="productCard-optionsList">
+                        <label class="productCard-option">
+                            <input type="radio" class="radio productCard-optionRadio" name="product-option" checked>
+                            <span class="h3 productCard-optionTitle">Premade Product</span>
+                            <span class="productCard-priceMark">$</span>
+
+                            <span class="productCard-optDescription">
+
+                                <span class="productCard-optDescriptionUl">
+                                    <span class="productCard-optDescriptionLi">Gold foil stamped logo</span>
+                                    <span class="productCard-optDescriptionLi">100lb Black linen stock</span>
+                                    <span class="productCard-optDescriptionLi">Business card slit on right pocket</span>
+                                </span>
+
+                                <span class="productCard-optDescriptionNote">Production Time: 2 working days</span>
+                            </span>
+                        </label>
+
+                        <label class="productCard-option">
+                            <input type="radio" class="radio productCard-optionRadio" name="product-option">
+                            <span class="h3 productCard-optionTitle">Custom Product</span>
+                            <span class="productCard-priceMark">$$</span>
+
+                            <span class="productCard-optDescription">
+                                <span class="productCard-optDescriptionPara">Create your own design and customize it with imprints, stocks, coatings, slits (including for business cards), and more.</span>
+
+                                <span class="productCard-optDescriptionNote">Production Time: 5-9 working days</span>
+                            </span>
+
+                            <span class="productCard-servicesList">
+                                <span class="productCard-servicesListItem">Free Artwork Review</span>
+                                <span class="productCard-servicesListItem">Free Corrections</span>
+                                <span class="productCard-servicesListItem">Free Proof</span>
+                            </span>
+                        </label>
+                    </div>
+
+                    <div class="productCard-qty">
+                        <label class="h3mk1 productCard-qtyLabel" for="qtySelect">Select Quantity</label>
+                        <select id="qtySelect" class="select productCard-qtySelect">
+                            <option>1</option>
+                            <option>2</option>
+                            <option>3</option>
+                        </select>
+                        <button type="button" class="button productCard-qtyGetButton">Get Pricing</button>
+
+                        <span class="productCard-qtyShipping">
+                            <span class="productCard-qtyShippingTitle">Free Shipping</span> - Expires 1/31
+                        </span>
+                    </div>
+                </div>
+
+                <div class="productCard-warranty">
+                    <div class="productCard-warrantyText">
+                        <h4 class="h4 productCard-warrantyTitle">Lifetime Warranty</h4>
+                        <p class="productCard-warrantyPara">We guarantee this product to last a lifetime.</p>
+                        <a href="#" class="link1 productCard-warrantyReadMore">Learn more</a>
+                    </div>
+
+                    <ul class="productCard-warrantyMenu">
+                        <li class="productCard-warrantyMenuItem">
+                            <a href="#" class="link2 productCard-warrantyMenuLink productCard-warrantyMenuLink_quality">Quality Inspections</a>
+                        </li>
+                        <li class="productCard-warrantyMenuItem">
+                            <a href="#" class="link2 productCard-warrantyMenuLink productCard-warrantyMenuLink_protection">Shipping Protection</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="productCard-description">
+                    <p class="productCard-descriptionPara">This folder exudes luxury with its precisely cut square corners, which create a crisp, clean exterior, and its profound textured stocks (contained in the premade product), constructed to be sturdy yet flexible with powerful tactical impact. The folder’s two pockets keep your letter-size (8 1/2" x 11") documents including marketing materials, checklists, timelines, guides, proposals, and listings for your clients secure and organized. We recommend adding a business card slit to the right pocket (contained in the premade product) to highlight your contact information, making it easy for your clients to reach out.</p>
+                </div>
+
+                <div class="productCard-specs">
+                    <h4 class="productCard-specsTitle">Dimension Open:</h4>
+                    <p class="productCard-specsPara">18" x 12"</p>
+
+                    <h4 class="productCard-specsTitle">Dimension Closed:</h4>
+                    <p class="productCard-specsPara">9" x 12"</p>
+
+                    <h4 class="productCard-specsTitle">Orientation:</h4>
+                    <p class="productCard-specsPara">Portrait</p>
+
+                    <h4 class="productCard-specsTitle">Holds:</h4>
+                    <p class="productCard-specsPara">Letter size paper (8 1/2" x 11")</p>
+
+                    <h4 class="productCard-specsTitle">Left Pocket:</h4>
+                    <p class="productCard-specsPara">4 1/4" tall v-split horizontal pocket</p>
+
+                    <h4 class="productCard-specsTitle">Right Pocket:</h4>
+                    <p class="productCard-specsPara">4 1/4" tall v-split horizontal pocket</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="ourWork">
+        <h2 class="h1 ourWork-title">OUR WORK IS PROVEN AND ACCLAIMED</h2>
+
+        <ul class="ourWorkRatings">
+            <li class="ourWorkRatings-item">
+                <h3 class="ourWorkRatings-title">Google 5/5 Stars</h3>
+                <div class="ourWorkRatings-stars">
+                    <i class="ourWorkRatings-star"></i>
+                    <i class="ourWorkRatings-star"></i>
+                    <i class="ourWorkRatings-star"></i>
+                    <i class="ourWorkRatings-star"></i>
+                    <i class="ourWorkRatings-star"></i>
+                </div>
+            </li>
+            <li class="ourWorkRatings-item">
+                <h3 class="ourWorkRatings-title">BBB 5/5 Stars</h3>
+                <div class="ourWorkRatings-stars">
+                    <i class="ourWorkRatings-star"></i>
+                    <i class="ourWorkRatings-star"></i>
+                    <i class="ourWorkRatings-star"></i>
+                    <i class="ourWorkRatings-star"></i>
+                    <i class="ourWorkRatings-star"></i>
+                </div>
+            </li>
+            <li class="ourWorkRatings-item">
+                <h3 class="ourWorkRatings-title">Facebook 4.7/5 Stars</h3>
+                <div class="ourWorkRatings-stars">
+                    <i class="ourWorkRatings-star"></i>
+                    <i class="ourWorkRatings-star"></i>
+                    <i class="ourWorkRatings-star"></i>
+                    <i class="ourWorkRatings-star"></i>
+                    <i class="ourWorkRatings-star" style="--fill: 60%"></i>
+                </div>
+            </li>
+        </ul>
+
+        <div class="ourWorkAchievements">
+            <div class="ourWorkAchievements-item">
+                <h3 class="h3mk1 ourWorkAchievements-title">20 MILLION+<br />PRODUCTS PRINTED</h3>
+                <p class="ourWorkAchievements-para">Our presentation cover products include folders, binders, envelopes, holders, sleeves, packaging, and boxes</p>
+            </div>
+            <div class="ourWorkAchievements-item">
+                <h3 class="h3mk1 ourWorkAchievements-title">Featured In<br />500+ PUBLICATIONS</h3>
+                <p class="ourWorkAchievements-para">Including Time, Forbes, Fortune, Inc, NBC News, Fox News, Fast Company, Adweek</p>
+            </div>
+            <div class="ourWorkAchievements-item">
+                <h3 class="h3mk1 ourWorkAchievements-title">5,000+<br />Loyal Clients</h3>
+                <p class="ourWorkAchievements-para">Get full access to where printers, graphic design firms, and marketing agencies go to for their marketing collateral</p>
+            </div>
+        </div>
+    </div>
+</div>
+</template>
+
+<footer class="footer">
+    <div class="container">
+        <ul class="footerMenu">
+            <li class="footerMenu-item">
+                <a href="#" class="link1 footerMenu-link">Sitemap</a>
+            </li>
+            <li class="footerMenu-item">
+                <a href="#" class="link1 footerMenu-link">Terms of Use</a>
+            </li>
+            <li class="footerMenu-item">
+                <a href="#" class="link1 footerMenu-link">Privacy Policy</a>
+            </li>
+        </ul>
+
+        <span class="footerCopyrights">© 1999-2024 CompanyFolders.com – All Rights Reserved</span>
+    </div>
+</footer>
+
+<template>
+    <div class="modal">
+        <div class="modalHeader">
+            <div class="modalHeader-title">
+                <h4 class="modalHeader-text">Start Customizing</h4>
+                <span class="formNote"><b class="formAsterisk">*</b>Required Fields</span>
+            </div>
+
+            <button type="button" class="modalCloseButton"></button>
+        </div>
+
+        <div class="modalContent">
+            <form class="form customizingFrom">
+                <section class="formSection">
+                    <div class="formSection-header">
+                        <h2 class="formSection-title">Product Options</h2>
+
+                        <div class="customizingFrom-options">
+                            <button type="button" class="customizingFrom-optionsToggle isActive">Standard Options <i class="customizingFrom-optionsToggleIcon"><i class="customizingFrom-optionsToggleIcon-iconBar"></i></i></button>
+                            <div class="customizingFrom-optionsContent">
+                                <div class="accordion">
+                                    <div class="accordionItem">
+                                        <div class="accordionItemTitle">
+                                            <span class="customizingFrom-popularOptions">Popular Options</span>
+                                        </div>
+                                    </div>
+
+                                    <div class="accordionItem isActive">
+                                        <div class="accordionItemTitle">
+                                            <h3 class="accordionItemTitle-text">Imprints</h3>
+                                            <i class="accordionItemTitle-icon"></i>
+                                        </div>
+
+                                        <div class="accordionItemContent">
+                                            <section class="accordionItemContent-section">
+                                                <h4 class="accordionItemContent-title">IMPRINT METHODS</h4>
+                                                <p class="accordionItemContent-para">Blank Product, Four Color Process (CMYK), PMS Printing, Embossing, Debossing, <a href="#" class="accordionItemContent-link">Foil Stamping</a></p>
+                                            </section>
+                                            <section class="accordionItemContent-section">
+                                                <h4 class="accordionItemContent-title">Metallic Foil Colors</h4>
+                                                <p class="accordionItemContent-para">Gold, Silver, Platinum, Pewter, Gun Metal, Brass, Treasure, Copper, Rose Gold, Apple, Blue, Sapphire Blue, Teal, Green, Lime</p>
+                                            </section>
+
+                                            <section class="accordionItemContent-section">
+                                                <h4 class="accordionItemContent-title">Non-Metallic Foil Colors</h4>
+                                                <p class="accordionItemContent-para">Clear, White, Red, Burgundy, Blue, Pine, Black</p>
+                                            </section>
+                                        </div>
+                                    </div>
+
+                                    <div class="accordionItem">
+                                        <div class="accordionItemTitle">
+                                            <h3 class="accordionItemTitle-text">Stocks</h3>
+                                            <i class="accordionItemTitle-icon"></i>
+                                        </div>
+                                    </div>
+
+                                    <div class="accordionItem">
+                                        <div class="accordionItemTitle">
+                                            <h3 class="accordionItemTitle-text">Coatings</h3>
+                                            <i class="accordionItemTitle-icon"></i>
+                                        </div>
+                                    </div>
+
+                                    <div class="accordionItem">
+                                        <div class="accordionItemTitle">
+                                            <h3 class="accordionItemTitle-text">Slits</h3>
+                                            <i class="accordionItemTitle-icon"></i>
+                                        </div>
+                                    </div>
+
+                                    <div class="accordionItem">
+                                        <div class="accordionItemTitle">
+                                            <h3 class="accordionItemTitle-text">Extras</h3>
+                                            <i class="accordionItemTitle-icon"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="formRow">
+                        <textarea class="textarea customizingFrom-yourWish" placeholder="Tell us your wish; anything is doable"></textarea>
+                    </div>
+                </section>
+
+                <section class="formSection">
+                    <div class="formSection-header">
+                        <h2 class="formSection-title">Delivery Information</h2>
+                        <p class="formSection-para">Used to calculate shipping time/cost</p>
+                    </div>
+
+                    <div class="formRowsGrid">
+                        <div class="formRow">
+                            <span class="formLabel">Country:</span>
+                            <div class="formRow-content">
+                                <div class="customizingFromCountry">
+                                    <label class="radioControl">
+                                        <input class="radio" type="radio" name="country" checked />
+                                        <span class="radioControl-text">United States</span>
+                                    </label>
+                                    <label class="radioControl">
+                                        <input class="radio" type="radio" name="country" />
+                                        <span class="radioControl-text">Canada</span>
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="formRow">
+                            <label class="formLabel"><b class="formAsterisk">*</b>Zip Code:</label>
+                            <div class="formRow-content">
+                                <input type="text" class="input customizingFrom-zip">
+                            </div>
+                        </div>
+
+                        <div class="formRow">
+                            <label class="formLabel">Delivery Date:</label>
+                            <div class="formRow-content">
+                                <div class="customizingFromDDate">
+                                    <div class="customizingFromDDate-item">
+                                        <label class="radioControl">
+                                            <input class="radio" type="radio" name="ddate" checked />
+                                            <span class="radioControl-text">Standard Time</span>
+                                        </label>
+                                    </div>
+                                    <div class="customizingFromDDate-item customizingFromDDate-item_rushed">
+                                        <label class="radioControl">
+                                            <input class="radio" type="radio" name="ddate" />
+                                            <span class="radioControl-text">Rushed</span>
+                                        </label>
+                                        <input type="date" placeholder="MM/DD/YYYY" class="input customizingFrom-rushed" disabled />
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section>
+                    <div class="formSection-header">
+                        <h2 class="formSection-title">Contact Information</h2>
+                    </div>
+
+                    <div class="formRowsGrid">
+                        <div class="formRow">
+                            <label class="formLabel"><b class="formAsterisk">*</b>First Name:</label>
+                            <div class="formRow-content">
+                                <input type="text" class="input customizingFrom-input">
+                                <!--                                <span class="formError">Please enter your first name.</span>-->
+                            </div>
+                        </div>
+                        <div class="formRow">
+                            <label class="formLabel"><b class="formAsterisk">*</b>Last Name:</label>
+                            <div class="formRow-content">
+                                <input type="text" class="input customizingFrom-input">
+                            </div>
+                        </div>
+                        <div class="formRow">
+                            <label class="formLabel"><b class="formAsterisk">*</b>Company:</label>
+                            <div class="formRow-content">
+                                <input type="text" class="input customizingFrom-input">
+                            </div>
+                        </div>
+                        <div class="formRow">
+                            <label class="formLabel"><b class="formAsterisk">*</b>Phone Number:</label>
+                            <div class="formRow-content">
+                                <div class="customizingFromPhone">
+                                    <input type="text" class="input customizingFrom-input customizingFromPhone-number">
+
+                                    <label class="customizingFromPhone-extControl">
+                                        Ext:
+                                        <input type="text" class="input customizingFrom-input customizingFromPhone-ext">
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="formRow">
+                            <label class="formLabel"><b class="formAsterisk">*</b>Email:</label>
+                            <div class="formRow-content">
+                                <input type="email" class="input customizingFrom-input">
+                            </div>
+                        </div>
+
+                        <div class="formRow">
+                            <div class="formRow-content">
+                                <button class="button formButton customizingFrom-submit" type="submit">Get Pricing</button>
+                            </div>
+                        </div>
+                    </div>
+
+                </section>
+            </form>
+        </div>
+    </div>
+</template>
+
+<script type="module" src="https://unpkg.com/react@18/umd/react.development.js"></script>
+<script type="module" src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+
+<script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+
+<!-- Подключаем Slick Carousel -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+
+<script type="text/babel" src="App.js"></script>
+
+</body>
+</html>
