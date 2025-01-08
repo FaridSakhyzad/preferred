@@ -19,6 +19,14 @@
     box-sizing: border-box;
 }
 
+html {
+    scrollbar-gutter: stable;
+}
+
+html, body {
+    height: 100dvh;
+}
+
 body {
     padding: 0;
     margin: 0;

@@ -4,39 +4,50 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Preferred Client Alpha</title>
-    <link rel="stylesheet" href="assets/styles/style.css"></link>
-
-    <link
-        rel="stylesheet"
-        type="text/css"
-        href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"
-    />
-    <link
-        rel="stylesheet"
-        type="text/css"
-        href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css"
-    />
+    <link rel="stylesheet" href="assets/styles/style.css" />
+    <link rel="stylesheet" type="text/css" href="vendor/slick/slick.min.css" />
+    <link rel="stylesheet" type="text/css" href="vendor/slick/slick-theme.min.css" />
 </head>
 <body>
 
-<header class="header">
-    <div class="container">
-        <a href="/" class="logo">Company Folders</a>
-        <a href="tel:2487387600" class="header-phone">(248) 738-7600</a>
-        <a href="mailto:companyfolders@gmail.com" class="header-email">companyfolders@gmail.com</a>
-    </div>
-</header>
+<div class="layout1">
+    <header class="header">
+        <div class="container">
+            <a href="/" class="logo">Company Folders</a>
+            <a href="tel:2487387600" class="header-phone">(248) 738-7600</a>
+            <a href="mailto:companyfolders@gmail.com" class="header-email">companyfolders@gmail.com</a>
+        </div>
+    </header>
 
-<div class="brandBar">
-    <div class="container">
-        <a href="#" class="brandBar-logo"></a>
-        <p class="brandBar-text">Welcome to EXP Realty Luxury agent-approved product portal, containing Company Folders products. Each product is professionally crafted, rigorously tested and made from premium materials with intense colors, excellent folding properties, and profound textures.</p>
+    <div class="brandBar">
+        <div class="container">
+            <a href="#" class="brandBar-logo"></a>
+            <p class="brandBar-text">Welcome to EXP Realty Luxury agent-approved product portal, containing Company Folders products. Each product is professionally crafted, rigorously tested and made from premium materials with intense colors, excellent folding properties, and profound textures.</p>
+        </div>
     </div>
+
+    <div class="content" id="root"></div>
+
+    <div id="modal-portal"></div>
+
+    <footer class="footer">
+        <div class="container">
+            <ul class="footerMenu">
+                <li class="footerMenu-item">
+                    <a href="#" class="link1 footerMenu-link">Sitemap</a>
+                </li>
+                <li class="footerMenu-item">
+                    <a href="#" class="link1 footerMenu-link">Terms of Use</a>
+                </li>
+                <li class="footerMenu-item">
+                    <a href="#" class="link1 footerMenu-link">Privacy Policy</a>
+                </li>
+            </ul>
+
+            <span class="footerCopyrights">© 1999-2024 CompanyFolders.com – All Rights Reserved</span>
+        </div>
+    </footer>
 </div>
-
-<div id="root"></div>
-
-<div id="modal-portal"></div>
 
 <template>
 <div class="container container_content">
@@ -409,24 +420,6 @@
 </div>
 </template>
 
-<footer class="footer">
-    <div class="container">
-        <ul class="footerMenu">
-            <li class="footerMenu-item">
-                <a href="#" class="link1 footerMenu-link">Sitemap</a>
-            </li>
-            <li class="footerMenu-item">
-                <a href="#" class="link1 footerMenu-link">Terms of Use</a>
-            </li>
-            <li class="footerMenu-item">
-                <a href="#" class="link1 footerMenu-link">Privacy Policy</a>
-            </li>
-        </ul>
-
-        <span class="footerCopyrights">© 1999-2024 CompanyFolders.com – All Rights Reserved</span>
-    </div>
-</footer>
-
 <template>
     <div class="modal">
         <div class="modalHeader">
@@ -625,14 +618,14 @@
     </div>
 </template>
 
-<script type="module" src="https://unpkg.com/react@18/umd/react.development.js"></script>
-<script type="module" src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+<script type="module" crossorigin="use-credentials" src="vendor/react.development.js"></script>
+<script type="module" crossorigin="use-credentials" src="vendor/react-dom.development.js"></script>
 
-<script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+<script crossorigin="use-credentials" src="vendor/babel.min.js"></script>
 
 <!-- Подключаем Slick Carousel -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+<script src="vendor/jquery.min.js"></script>
+<script src="vendor/slick/slick.min.js"></script>
 
 <script type="text/babel" src="App.js"></script>
 

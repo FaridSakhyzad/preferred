@@ -32,6 +32,8 @@
     border-bottom: 1px solid #cccccc;
     margin-bottom: -1px;
     padding: 20px 30px 36px 30px;
+    display: flex;
+    flex-direction: column;
 }
 
 .productCard-header {
@@ -243,7 +245,7 @@
 
 .productCard-servicesList {
     display: flex;
-    gap: 13px;
+    gap: 14px;
 }
 
 .productCard-servicesListItem {
@@ -251,16 +253,16 @@
     position: relative;
     font-size: 10px;
 
-    &:before {
+    &:after {
         content: '|';
         display: block;
         position: absolute;
         top: 0;
-        left: -8px;
+        right: -8px;
     }
 
-    &:first-child {
-        &:before {
+    &:last-child {
+        &:after {
             display: none;
         }
     }
@@ -415,7 +417,7 @@
 .productCard-descriptionPara {
     font-size: 12px;
     line-height: 20px;
-    margin-bottom: 10px;
+    margin: 0 0 10px 0;
 
     &:last-child {
         margin-bottom: 0;
@@ -504,5 +506,13 @@
 
     .productCard-carouselImageBox {
         margin: 0;
+    }
+
+    .productCard-servicesList {
+        flex-wrap: wrap;
+    }
+
+    .productCard-servicesListItem {
+        white-space: nowrap;
     }
 }
